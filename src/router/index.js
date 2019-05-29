@@ -8,6 +8,9 @@ import wenhua from '@/components/wenhua'
 import city from '@/components/city'
 import shehui from '@/components/shehui'
 import jiu from '@/components/jiu'
+import jituan from '@/components/jituan'
+import lingdao from '@/components/lingdao'
+import go_zi from '@/components/go_zi'
 
 Vue.use(Router)
 
@@ -21,7 +24,12 @@ export default new Router({
     {
       path: '/go',
       name: 'go',
-      component: go
+      component: go,
+      children:[
+        {path: '',name:'go_zi',component:go_zi},
+        {path: 'jituan',name:'jituan',component:jituan},
+        {path: 'lingdao',name:'lingdao',component:lingdao}
+      ]
     },
     {
       path: '/news',

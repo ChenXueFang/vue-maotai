@@ -17,7 +17,7 @@
       <!--  banner轮播-->
     </el-header>
 
-    <el-main style="overflow-y: hidden;clear: both;">
+    <el-main style="overflow-y: hidden;">
       <!-- 杂七杂八一排-->
       <ul class="main_news">
         <li><a href="#" title="更多新闻资讯"><img src="./img/new-bg.jpg"></a></li>
