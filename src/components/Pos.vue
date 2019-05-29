@@ -18,6 +18,7 @@
     </el-header>
 
     <el-main style="overflow-y: hidden;clear: both;">
+      <!-- 杂七杂八一排-->
       <ul class="main_news">
         <li><a href="#" title="更多新闻资讯"><img src="./img/new-bg.jpg"></a></li>
         <!-- 新闻轮播-->
@@ -53,14 +54,17 @@
         <li class="one_lun">
           <div class="block" style="width: 355px;height: 160px;">
             <el-carousel height="160px">
-              <el-carousel-item v-for="item in 1" :key="item">
-                <h3 class="small">{{ item }}</h3>
+              <el-carousel-item class="item" v-for="item in 1" :key="item">
+
               </el-carousel-item>
             </el-carousel>
           </div>
         </li>
+        <li><img src="./img/6.png"></li>
+        <li><img src="./img/7.png"></li>
       </ul>
-
+      <!-- 图片一排-->
+      <div class="pic_list"><img src="./img/ioco1.png"><span>|</span><img src="./img/ioco2.png"><span>|</span><img src="./img/ioco3.png"><span>|</span><img src="./img/ioco4.png"><span>|</span><img src="./img/ioco5.png"><span>|</span><img src="./img/ioco6.png"></div>
     </el-main>
   </el-container>
 </template>
@@ -122,6 +126,7 @@
     line-height: 160px;
     background: #e1d3c8;
     margin-left: 2px;
+    cursor: pointer;
   }
   /* news轮播*/
   .news_lun_li{
@@ -178,19 +183,15 @@
   .el-carousel__item:nth-child(3) {
     background:url("./img/3.jpg");
   }
-  .el-carousel__button {
-    display: block;
-    opacity: .48;
-    width: 10px;
-    height: 10px;
-    background-color: #FFF;
-    border: none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
+  /*一排图*/
+  .pic_list{
+    height: 34px;
+    line-height: 34px;
+    color: #bea689;
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-around;
     cursor: pointer;
-    -webkit-transition: .3s;
-    transition: .3s;
   }
 </style>
 

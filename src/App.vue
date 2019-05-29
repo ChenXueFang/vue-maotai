@@ -15,6 +15,24 @@
       <li><router-link class="a" to="/city">茅台商城</router-link></li>
     </ul>
     <router-view/>
+
+    <!--尾部-->
+    <ul class="footer">
+      <li>
+        <!-- 第一行链接-->
+        <div style="margin-top: 5px">
+          <el-link :underline="false" class="link2">茅台股份官网</el-link> | <el-link :underline="false" class="link2">茅台党建</el-link> |
+          <el-link :underline="false" class="link2">茅台股份官网</el-link> | <el-link :underline="false" class="link2">茅台党建</el-link> |
+          <el-link :underline="false" class="link2">茅台股份官网</el-link> | <el-link :underline="false" class="link2">茅台党建</el-link>
+        </div>
+        <!-- 第二行链接-->
+        <div>
+          <el-link :underline="false" class="link2 special">中国贵州茅台酒厂(集团)有限责任公司  版权所有  2019 </el-link>
+          <el-link :underline="false" class="link2"><img src="@/components/img/jin.png" width="15px">贵公网安备 52038202001007号</el-link>
+        </div>
+      </li>
+      <li><img src="@/components/img/footer_logo.png" style="margin-top: 8px"></li>
+    </ul>
   </div>
 </template>
 
@@ -80,4 +98,25 @@ ul.nav>li>.a:hover{
   background: #b20000;
   color: #fff;
 }
+/*尾部*/
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background: #181c25;
+    text-align: left;
+    color: #67999e;
+    padding: 0 60px;
+  }
+  .footer .link2{
+    color: #67999e;
+  }
+  .footer .link2:hover{
+    color: #fff;
+  }
+  .footer .special:hover{
+    color: #67999e;
+  }
 </style>
