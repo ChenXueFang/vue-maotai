@@ -47,10 +47,10 @@
         </div>
         <!--栏内容-->
         <div class="lan_con">
-          <ul class="news_list">
-            <li v-for="newsZi in newsList">
-              <img src="" alt="">
-              <a href="#">{{newsZi.zi}}</a>
+          <ul class="video_ul">
+            <li class="video_li" v-for="videoList in video">
+              <img :src="videoList.img">
+              <a href="#">{{videoList.name}}</a>
             </li>
           </ul>
         </div>
@@ -103,21 +103,29 @@
       data(){
         return{
           newsList:[
-            {zi:'茅台财务公司核心业务系统升级建设项目拟采用单一来源采购的公示'},
-            {zi:'2018年工会艺术团招聘拟录用人员公示'},
-            {zi:'2018年工会艺术团招聘参加体检人员和综合成绩公示'},
-            {zi:'茅台财务公司核心业务系统升级建设项目拟采用单一来源采购的公示'},
-            {zi:'2018年工会艺术团招聘拟录用人员公示'},
-            {zi:'2018年工会艺术团招聘参加体检人员和综合成绩公示'}
+            {zi:'茅台财务公司'},
+            {zi:'2018年工会艺术团'},
+            {zi:'打工行年工会'},
+            {zi:'茅台财务'},
+            {zi:'2018年工会'},
+            {zi:'大开关年'}
           ],
           newsList2:[
-            {zi:'18 块展板 18 个里程碑 茅台 18 年的辉煌成就'},
-            {zi:'2018年工会艺术团招聘拟录用人员公示'},
-            {zi:'赖茅凝聚中国羽球力量 壮行国羽苏迪曼杯决赛征程'},
-            {zi:'茅台财务公司核心业务系统升级建设项目拟采用单一来源采购的公示'},
-            {zi:'茅台集团与浪潮集团达成深入合作共识'},
-            {zi:'2018年工会艺术团招聘参加体检人员和综合成绩公示'}
+            {zi:'茅台财务公司'},
+            {zi:'2018年工会艺术团'},
+            {zi:'打工行年工会'},
+            {zi:'茅台财务'},
+            {zi:'2018年工会'},
+            {zi:'大开关年'}
           ],
+          video:[
+            {img:'http://www.china-moutai.com/uploadfile/2015/1231/20151231104724738.jpg',name:'茅台名字'},
+            {img:'http://www.china-moutai.com/uploadfile/2018/0927/20180927113941725.jpg',name:'茅台名字'},
+            {img:'http://www.china-moutai.com/uploadfile/2015/1231/20151231104632786.jpg',name:'茅台名字'},
+            {img:'http://www.china-moutai.com/uploadfile/2015/1231/20151231104645766.jpg',name:'茅台名字'},
+            {img:'http://www.china-moutai.com/uploadfile/2018/0927/20180927114003809.jpg',name:'茅台名字'},
+            {img:'http://www.china-moutai.com/uploadfile/2015/1226/20151226034933693.jpg',name:'茅台名字'},
+          ]
         }
       }
     }
@@ -183,8 +191,28 @@
     margin: 20px 0;
   }
   /*茅台视频*/
-  .video>li{
+  .video>.one_box{
     width: 100%;
     margin-top: 20px;
+  }
+  .video_ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 25px 20px 0;
+  }
+  .video_li{
+    width: 290px;
+    height: 250px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    border: 1px solid #e3e3e3;
+    align-items: center;
+  }
+  .video_li a{
+    display: block;
+    margin-top: 12px;
   }
 </style>
