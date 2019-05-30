@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header style="margin: 0;padding: 0;margin-bottom: 260px">
-      <img src="./img/banner3.jpg" height="320px" width="100%">
+      <img src="./img/news.png" height="320px" width="100%">
     </el-header>
 
     <el-main class="main" style="overflow-y: hidden;">
@@ -79,12 +79,12 @@
 
 <style scoped>
   .main{
-    padding: 10px 70px;
+    padding: 20px 70px;
     margin-bottom: 40px;
   }
   /*主体左*/
   .main_left{
-    background: linear-gradient(#d6d3cc,#f1ece8);
+    background: linear-gradient(#d6d3cc,#f1ece8,#fff);
     border-radius: 5px;
     padding: 15px 30px 0;
     border: 1px solid #c4bbb6;

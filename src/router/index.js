@@ -11,6 +11,12 @@ import jiu from '@/components/jiu'
 import jituan from '@/components/jituan'
 import lingdao from '@/components/lingdao'
 import go_zi from '@/components/go_zi'
+import news_zi from '@/components/news_zi'
+import news_gongshi from '@/components/news_gongshi'
+import news_meiti from '@/components/news_meiti'
+import wenhua_zi from '@/components/wenhua_zi'
+import wenhua_zuimei from '@/components/wenhua_zuimei'
+import wenhua_renwen from '@/components/wenhua_renwen'
 
 Vue.use(Router)
 
@@ -34,17 +40,27 @@ export default new Router({
     {
       path: '/news',
       name: 'news',
-      component: news
+      component: news,
+      children:[
+        {path: '',name:'news_zi',component:news_zi},
+        {path: 'news_gongshi',name:'news_gongshi',component:news_gongshi},
+        {path: 'news_meiti',name:'news_meiti',component:news_meiti}
+      ]
+    },
+    {
+      path: '/wenhua',
+      name: 'wenhua',
+      component: wenhua,
+      children:[
+        {path: '',name:'wenhua_zi',component:wenhua_zi},
+        {path: 'wenhua_zuimei',name:'wenhua_zuimei',component:wenhua_zuimei},
+        {path: 'wenhua_renwen',name:'wenhua_renwen',component:wenhua_renwen}
+      ]
     },
     {
       path: '/brand',
       name: 'brand',
       component: brand
-    },
-    {
-      path: '/wenhua',
-      name: 'wenhua',
-      component: wenhua
     },
     {
       path: '/city',

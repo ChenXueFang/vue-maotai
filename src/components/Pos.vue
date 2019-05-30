@@ -33,20 +33,8 @@
         <!-- 新闻轮播-->
         <li>
           <ul class="news_list">
-            <li>
-              <span class="el-icon-arrow-right"></span><a href="#">茅台集团与浪潮集团达成深入合作共识</a>
-            </li>
-            <li>
-              <span class="el-icon-arrow-right"></span><a href="#">首届全国文化茅台体验（展示）研讨会召开：挖掘文化优质资源 推动跨越千亿目标</a>
-            </li>
-            <li>
-              <span class="el-icon-arrow-right"></span><a href="#">夏红民调研茅台时强调：强化监督执纪问责，推动茅台高质量发展</a>
-            </li>
-            <li>
-              <span class="el-icon-arrow-right"></span><a href="#">2019中国国际大数据产业博览会在贵阳开幕——茅台以现代科技演绎三大主题</a>
-            </li>
-            <li>
-              <span class="el-icon-arrow-right"></span><a href="#">青年企业家俱乐部一行到茅台集团调研</a>
+            <li v-for="item in list">
+              <span class="el-icon-arrow-right"></span><a href="#">{{item.li}}</a>
             </li>
           </ul>
         </li>
@@ -74,6 +62,14 @@
       name: "Pos.vue",
       data() {
         return {
+          list:[
+            {'li':'茅台集团与浪潮集团达成深入合作共识'},
+            {'li':'青年企业家俱乐部一行到茅台集团调研'},
+            {'li':'2019中国国际大数据产业博览会在贵阳开幕——茅台以现代科技演绎三大主题'},
+            {'li':'夏红民调研茅台时强调：强化监督执纪问责，推动茅台高质量发展'},
+            {'li':'首届全国文化茅台体验（展示）研讨会召开：挖掘文化优质资源 推动跨越千亿目标'}
+
+          ],
           //banner轮播
           swiperOption: {
             effect : 'fade',

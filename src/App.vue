@@ -8,9 +8,9 @@
       <li><router-link class="a" to="/">首页</router-link></li>
       <li><router-link class="a" to="/go">走进茅台</router-link></li>
       <li><router-link class="a" to="/news">新闻资讯</router-link></li>
+      <li><router-link class="a" to="/wenhua">文化茅台</router-link></li>
       <li><router-link class="a" to="/brand">品牌战略</router-link></li>
       <li><router-link class="a" to="/shehui">社会责任</router-link></li>
-      <li><router-link class="a" to="/wenhua">文化茅台</router-link></li>
       <li><router-link class="a" to="/jiu">酒之博览</router-link></li>
       <li><router-link class="a" to="/city">茅台商城</router-link></li>
     </ul>
