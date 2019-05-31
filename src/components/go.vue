@@ -12,6 +12,10 @@
             <!--左内容-->
             <dl class="main_left_con">
               <dt>走进茅台</dt>
+<!--              <el-menu :default-active="activeIndex" class="dd el-menu-demo" mode="horizontal" @select="handleSelect">-->
+<!--                <el-menu-item index="1"><router-link class="a" to="/go/jituan">集团介绍</router-link></el-menu-item>-->
+<!--                <span class="el-icon-arrow-right"></span>-->
+<!--              </el-menu>-->
               <dd>
                 <router-link class="a" to="/go/jituan">集团介绍</router-link>
                 <span class="el-icon-arrow-right"></span>
